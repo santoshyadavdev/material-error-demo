@@ -4,6 +4,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 
 import { TabdemoRoutingModule } from './tabdemo-routing.module';
 import { TabdemoComponent } from './tabdemo.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { TabdemoComponent } from './tabdemo.component';
   imports: [
     CommonModule,
     MatTabsModule,
+    MatFormFieldModule,
     TabdemoRoutingModule
   ]
 })

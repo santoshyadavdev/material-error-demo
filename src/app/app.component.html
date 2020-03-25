@@ -1,5 +1,10 @@
-<a [routerLink]="['/tab']" routerLinkActive="router-link-active" >
-Tabs Demo</a>
-<a [routerLink]="['/expansion']" routerLinkActive="router-link-active" >
+<a [routerLink]="['/tab']" routerLinkActive="router-link-active">
+  Tabs Demo</a>
+<a [routerLink]="['/expansion']" routerLinkActive="router-link-active">
   Exapnsion Demo</a>
+
+<mat-form-field>
+  <mat-label>Age</mat-label>
+  <input matInput type="number" min="1">
+</mat-form-field>
 <router-outlet></router-outlet>
