@@ -1,7 +1,15 @@
 <nav mat-tab-nav-bar>
   <ng-container *ngFor="let tab of tabs;let i=index">
+    <ng-container *ngIf="tabs.length; else linkOnly">
     <a mat-tab-link [active]="activeIndex === i" (click)="activeIndex = i">
       {{tab}}
     </a>
   </ng-container>
+  <ng-template #linkOnly>
+    <a mat-tab-link
+    >
+     Test
+    </a>
+  </ng-template>
+</ng-container>
 </nav>
