@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-tabdemo',
   templateUrl: './tabdemo.component.html',
-  styleUrls: ['./tabdemo.component.css']
+  styleUrls: ['./tabdemo.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TabdemoComponent implements OnInit {
   tabs = [0, 1, 2];

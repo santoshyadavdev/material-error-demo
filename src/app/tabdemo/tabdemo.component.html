@@ -1,4 +1,4 @@
-<nav mat-tab-nav-bar>
+<nav class="saam-tab-menu" mat-tab-nav-bar>
   <ng-container *ngFor="let tab of tabs;let i=index">
     <ng-container *ngIf="tabs.length; else linkOnly">
     <a mat-tab-link [active]="activeIndex === i" (click)="activeIndex = i">
